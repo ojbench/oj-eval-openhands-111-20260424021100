@@ -2,8 +2,6 @@
 
 #undef strtok
 
-namespace sjtu {
-
 char *strtok(char * __restrict str, const char * __restrict delim) {
 	static char *next_token = nullptr;
 	static char *current_string = nullptr;
@@ -68,8 +66,6 @@ char *strtok(char * __restrict str, const char * __restrict delim) {
 	}
 	
 	return token_start;
-}
-
 }
 
 
